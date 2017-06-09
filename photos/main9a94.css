@@ -1,0 +1,11 @@
+img.ImageFrame_image { vertical-align:bottom; border:none; }
+table.ImageFrame_shadow { direction: ltr; }
+table.ImageFrame_shadow .RRT { height:10px; background:url(modules/imageframe/frames/shadow/RRT.png) no-repeat; }
+table.ImageFrame_shadow .RR { width:7px; background:url(modules/imageframe/frames/shadow/RR.png) repeat-y; }
+table.ImageFrame_shadow .RR div.V { width:7px; }
+table.ImageFrame_shadow .BBL { width:9px; background:url(modules/imageframe/frames/shadow/BBL.png) no-repeat; }
+table.ImageFrame_shadow .BB { height:7px; background:url(modules/imageframe/frames/shadow/BB.png) repeat-x; }
+table.ImageFrame_shadow .BR { width:7px; height:7px; background:url(modules/imageframe/frames/shadow/BR.png) no-repeat; }
+table.ImageFrame_shadow td { font-size:1px } /* For IE */
+td div.H { width:1px; height:0; }
+td div.V { width:0; height:1px; }

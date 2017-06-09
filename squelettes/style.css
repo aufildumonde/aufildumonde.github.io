@@ -1,0 +1,670 @@
+/*
+ * Général
+ */
+
+body
+{
+	background-color: black;
+	margin:0px;
+	padding:0px;
+}
+
+a 
+{
+	color: Chocolate;
+	text-decoration:none;
+}
+
+a:hover 
+{
+	color: Chocolate;
+	text-decoration: underline;
+}
+
+h2
+{
+	text-align:center;
+	font-size: large;
+}
+
+/*
+ * Balises définies par SPIP
+ */
+ 
+p.spip
+{
+	text-align: justify;
+}
+
+h3.spip
+{
+	text-align:left;
+	margin-top:50px;
+}
+
+table.spip
+{
+	text-align:left;
+	border: 1px rgb(153,153,153) solid;
+	padding:5px;
+}
+
+tr.row_first
+{
+	text-align:center;
+	background-color: rgb(222,187,148);
+}
+
+tr.row_even
+{
+	background-color: rgb(253,236,208);
+	color: rgb(136,70,44);
+}
+
+tr.row_odd
+{
+	background-color: rgb(222,187,148);
+	color: rgb(136,70,44);
+}
+
+a.spip_url
+{
+	color: rgb(136,70,44);
+
+}
+
+/* seulement pour IE PC */
+hr.spip
+{
+	background: url(line.png) no-repeat center;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/squelettes/line.png);
+	height:1px;
+	width:1px;
+	border: 0;
+	margin: -0.5em 0;
+}
+*>hr.spip
+{
+	height: 15px;
+	width: 100%;
+	margin: 0;
+}
+
+/*
+ * Formulaires
+ */
+
+.forml
+{
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+
+
+div.formulaire_forum
+{
+	padding: 10px;
+	margin: 10px;
+}
+
+div.formulaire_forum fieldset
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*
+ * Structure
+ */
+
+#structure
+{
+	background-image: url(fond.jpg);
+	background-repeat:repeat-y;
+	margin-right:auto;
+	margin-left:auto;
+	border: 1px rgb(223,206,172) solid;
+	width:763px;
+	height:100%;
+	color:rgb(128,0,0);
+	font-family: "Bookman Old Style", Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	padding:0px;
+	overflow:hidden; /* Pour éviter les dépassements pour IE6, notamment dans le cas de textes italiques justifiés */
+}
+
+/*
+ * Logo
+ */
+
+#logo
+{
+	width:763px;
+	height:100px;
+	overflow: hidden; /* empêche le dépassement de boîte (cf. padding dans #logo a) */
+}
+
+#logo a
+{
+	display: block;  /* mise en block de <a> pour lui donner des dimensions */
+	width:763px;
+	height:100px;
+	background: url(logo.jpg) left top no-repeat;
+	padding: 100px 0 0 0; /* décale le texte verticalement pour le faire disparaître */
+}
+
+/*
+ * Menus
+ */
+
+#menu
+{
+	position: relative;
+	height: 30px;
+	/*margin: 0 10px 1em 15px;*/
+	clear: both;
+	background: url(menu.jpg) left top no-repeat;
+	overflow: hidden; /* empêche le dépassement de boîte (cf. padding dans #menu li a) */
+	border-top:1px rgb(223,206,172) solid;
+}
+
+
+#menu ul
+{
+	position: absolute;
+	height: 30px;
+	width: 763px;
+	margin:0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#menu li
+{
+	float: left;
+}
+
+/* dimensions et définitions des boutons */
+#menu li a
+{
+	display: block;  /* mise en block de <a> pour lui donner des dimensions */
+	height: 30px;
+	padding: 30px 0 0 0; /* décale le texte verticalement pour le faire disparaître */
+}
+
+/* On fixe la largeur de chaque élément du menu */
+#menu a#menu1
+{
+	width: 230px;
+}
+#menu a#menu2
+{
+	width: 200px;
+}
+#menu a#menu3
+{
+	width: 180px;
+}
+#menu a#menu4
+{
+	width: 153px;
+}
+
+#menu a:hover
+{
+	background: url(menu.jpg) top left no-repeat;
+}
+
+#menu a#menu1:hover
+{
+	background-position: 0px -30px;
+}
+#menu a#menu2:hover
+{
+	background-position: -230px -30px;
+}
+#menu a#menu3:hover
+{
+	background-position: -430px -30px;
+}
+#menu a#menu4:hover
+{
+	background-position: -610px -30px;
+}
+
+/*
+ * Hierarchie
+ */
+
+#hierarchie
+{
+	padding-top:10px;
+	padding-right:10px;
+	padding-left:10px;
+	font-size:80%;
+	margin:2px;
+	text-align:right;
+}
+
+/*
+ * Corps
+ */
+
+#corps
+{
+	padding:10px;
+	height:100%;
+}
+
+/*
+ * Liens vers articles précédents suivants
+ */
+
+div.navigation
+{
+	margin:20px;
+	font-weight:bold;
+	font-style:italic;
+}
+
+div.article_precedent
+{
+	text-align:left;
+	float:left;
+	width:50%;
+}
+div.article_suivant
+{
+	text-align:right;
+}
+/*
+ * Titre
+ */
+
+.titre
+{
+	font-weight: bold;
+	font-size: x-large;
+	margin: 20px 0px 20px 0px;
+	text-align: center;
+}
+
+/*
+ * Texte
+ */
+
+.texte
+{
+	margin:10px;
+	padding:10px;
+}
+
+/*
+ * Documents
+ */
+
+.spip_documents { text-align: center; }
+.spip_documents img { border: 0; }
+.spip_documents_center { clear: both; width: 100%; margin: auto; }
+span.spip_documents_center { display: block; margin-top:1em; }
+.spip_documents_left { float: left; margin: 3px 15px 0px 0px; }
+.spip_documents_right { float: right; margin: 3px 0px 0px 15px; }
+.spip_doc_titre { font-weight: bold; font-size: 0.7em; }
+.spip_doc_descriptif { clear: both; font-size: 0.7em; }
+.spip_documents_center .spip_doc_titre { margin:auto; }
+.spip_documents_center .spip_doc_descriptif { margin:auto; }
+
+/*
+ * Habillage des forums
+ */
+
+ul.forum-total
+{
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+div.forum-fil
+{
+	margin-top: 1em;
+}
+
+.forum-fil ul
+{
+	display: block;
+	margin: 0px;
+	margin-left: 2em;
+	padding: 0px;
+	list-style: none;
+}
+
+.forum-titre
+{
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.forum-item
+{
+	margin: 0 0 1em 0;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	text-align: justify;
+	color: #303030;
+}
+
+.forum-repondre-message
+{
+	text-align: left;
+	font-size: 80%;
+}
+
+.forum-auteur
+{
+	font-style: italic;
+	font-size: 80%;
+	margin-bottom: 5px;
+}
+
+div.forum
+{
+	margin-bottom: 1em;
+}
+
+div.forum-repondre
+{
+	margin-bottom: 1em;
+	clear:both;
+}
+
+/* 
+ * Pied de page
+ */
+
+#pied
+{
+	color:black;
+	border-top:1px rgb(223,206,172) solid;
+	position:relative;
+	clear:both;
+	width:100%;
+}
+
+#pied #pied_gauche
+{
+	text-align:left;
+	float:left;
+	width:30%;
+	padding-left:1em;
+	font-size: 0.9em;
+}
+#pied #pied_droit
+{
+	text-align:right;
+	padding-right:1em;
+	font-size: 0.9em;
+}
+
+/*
+ * Présentation
+ */
+ 
+div.presentation
+{
+	float:left; 
+	width:50%; 
+	text-align:center;
+}
+
+div.presentation img
+{
+	border:0;
+}
+
+
+/*
+ * Préparation
+  */
+  
+div.cadre
+{
+	margin:10px;
+	padding-left:10px;
+	padding-right:10px;
+}  
+
+li.preparation
+{
+	margin-bottom: 10px;
+}
+
+span.titre-preparation
+{
+	font-size: 120%;
+}
+  
+/*
+ * Itinéraire
+  */
+  
+div.itineraire
+{
+	margin:10px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align:center;
+}
+  
+/*
+ * Carnet de route
+  */
+  
+div.carnetderoute-pays
+{
+	margin:10px;
+}
+
+div.carnetderoute-article
+{
+	margin:10px;
+	padding-left:5px;
+}
+
+div.carnetderoute-detail-article
+{
+	margin: 10px;
+}
+
+span.carnetderoute-signature
+{	
+	font-weight:bold;
+	font-size:70%;
+}
+
+div.carnetderoute-introduction
+{
+	font-size:80%;
+	border: 1px peru dotted;
+	padding: 10px;
+	text-align: justify;
+}
+
+/*
+  * styles Gallery2
+  */
+  
+#gbBreadCrumb
+{
+	font-size:80%;
+	margin-top:-10px; /* on fait sorte que ça ressemble à la hierarchie standard*/
+	text-align:right;
+}
+
+#gbBreadCrumb div.accueil
+{
+	float: right;
+}
+
+#gbBreadCrumb div.block-core-BreadCrumb
+{
+	float: right;
+}
+
+#gallery
+{
+	clear:both;
+	padding:10px;
+	height:100%;
+}
+
+#gallery img
+{
+	border:0;
+}
+
+#gallery div.ligne-vignettes
+{
+	clear:both;
+	text-align:center;
+}
+
+#gallery div.vignette
+{
+	float:left;
+	text-align:center;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+#gallery div.vignette table
+{
+	margin:auto;
+}
+
+#gallery div.titre-vignette
+{
+	text-align:center;
+}
+
+#gallery div.titre-vignette div.summary
+{
+	font-size:90%;
+}
+
+#gallery div.titre-vignette div.description
+{
+	font-size:80%;
+}
+
+#gallery.IE div.titre-vignette div.description
+{
+	font-size:75%;
+}
+
+#gallery div#gbNavigator
+{
+	font-size:90%;
+	clear:both;
+}
+
+#gallery div#gbNavigator a.first
+{
+	display:none;
+}
+
+#gallery div#gbNavigator a.last
+{
+	display:none;
+}
+
+#gallery div#gbNavigator a.previous
+{
+	padding-left: 27px;
+	background: url("nav_prev.gif") left no-repeat;
+	color:rgb(128,0,0);
+}
+
+#gallery div#gbNavigator a.next
+{
+	padding-right: 27px;
+	background: url("nav_next.gif") right no-repeat;
+  	color:rgb(128,0,0);
+}
+
+#gallery div#gbNavigator div.first-and-previous img 
+{
+	vertical-align: middle;
+	padding-right: 0.5em;
+}
+
+#gallery div#gbNavigator div.next-and-last img
+{
+	vertical-align: middle;
+	padding-left: 0.5em;
+}
+
+#gallery div#gbNavigator div.first-and-previous
+{
+	float:left;
+	margin-bottom:1em;
+}
+
+#gallery div#gbNavigator div.next-and-last
+{
+	float:right;
+	margin-bottom:1em;
+}
+
+#gallery div#gsImageView
+{
+	clear:both;
+	text-align:center;
+}
+
+#gallery div#gsImageView table
+{
+	margin:auto;
+}
+
+#gallery div#gSummary
+{
+	clear:both;
+	font-weight: bold;
+	font-size: large;
+	text-align: center;
+}
+
+#gallery div#gDescription
+{
+	clear:both;
+	text-align: center;
+}
+
+#gallery div#gDate
+{
+	clear:both;
+	text-align: center;
+	font-size:80%;
+}
+
+#gallery div#pages
+{
+	clear:both;
+	font-size:90%;
+}
+
+/*
+ * Boutons d'administratop,
+ */
+
+.spip-admin-gallery {
+	top: 20px;
+	right: 20px;
+	position: absolute;
+	background-color: transparent;
+	z-index: 100;
+}

@@ -1,0 +1,29 @@
+#gallery.IE table.ImageFrame_shadow .RRT 
+{ 
+	height:10px; width:7px; background:none; 
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/photos/modules/imageframe/frames/shadow/RRT.png, sizingMethod=scale);
+}
+
+#gallery.IE table.ImageFrame_shadow .RR 
+{ 
+	width:7px; background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/photos/modules/imageframe/frames/shadow/RR.png, sizingMethod=scale);
+}
+
+#gallery.IE table.ImageFrame_shadow .BBL
+{ 
+	width:9px; height:7px; background:none; 
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/photos/modules/imageframe/frames/shadow/BBL.png, sizingMethod=scale);
+}
+
+#gallery.IE table.ImageFrame_shadow .BB 
+{ 
+	height:7px; background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/photos/modules/imageframe/frames/shadow/BB.png, sizingMethod=scale);
+}
+
+#gallery.IE table.ImageFrame_shadow .BR 
+{ 
+	width:7px; height:7px; background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/photos/modules/imageframe/frames/shadow/BR.png, sizingMethod=scale);
+}
